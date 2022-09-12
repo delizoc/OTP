@@ -1,20 +1,5 @@
-//
-To run testscript in makefile use this setup and clean. Update PORT1 and PORT2 numbers each run.
-//
+#OTP
+In this assignment, you will be creating five small programs that encrypt and decrypt information using a one-time pad-like system. These programs will combine the multi-processing code you have been learning with socket-based inter-process communication. Your programs will also be accessible from the command line using standard Unix features like input/output redirection, and job control. Finally, you will write a short compilation script.
 
-setup:
-	gcc -g -o enc_server enc_server.c code.c server.c
-	gcc -g -o enc_client enc_client.c client.c
-	gcc -g -o dec_server dec_server.c code.c server.c
-	gcc -g -o dec_client dec_client.c client.c
-	gcc -g -o keygen keygen.c
-	chmod +x ./p5testscript
-	./p5testscript PORT1 PORT2 > mytestresults 2>&1 
-	
-clean:
-	rm enc_client
-	rm enc_server
-	rm dec_client
-	rm dec_server
-	rm keygen
-	rm mytestresults
+To run testscript in makefile use this setup and clean. 
+Update PORT1 and PORT2 numbers each run.
